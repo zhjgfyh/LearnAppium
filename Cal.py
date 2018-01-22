@@ -1,5 +1,6 @@
 # urs/bin/python
 # encoding:utf-8
+
 import time
 from appium import webdriver
 import unittest
@@ -11,6 +12,7 @@ class MyTestCase(unittest.TestCase):
         desired_caps = {}
         desired_caps['platformName'] = 'Android'
         desired_caps['platformVersion'] = '4.3'
+        # Genymotion Galaxy Nexus 4.3 API 18
         desired_caps['deviceName'] = '192.168.140.101:5555'
         desired_caps['appPackage'] = 'com.android.calculator2'
         desired_caps['appActivity'] = '.Calculator'
